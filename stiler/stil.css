@@ -16,13 +16,13 @@ header, main, footer, nav, article, aside, div {
 				max-width: 1200px;
 				margin: 0 auto;
 				display: grid;
-				grid-template-columns: auto 2fr 2fr 2fr;
+				grid-template-columns: 1fr 2fr 2fr 2fr;
 				grid-template-rows: 100px auto auto auto auto;
-				grid-template-areas: 	"header header header header"
+				grid-template-areas: 	"nav header header header"
 															"nav main main aside"
 															"nav main main aside"
 															"nav main main aside"
-															"footer footer footer footer";
+															"nav footer footer footer";
 				background-color: lightgrey; 												
 }
 			
@@ -39,7 +39,10 @@ header, main, footer, nav, article, aside, div {
 	border-style: solid;
 	border-width: 5px;
 	border-color: lightslategrey;
-	padding: 15px;			
+	padding: 15px;
+	position: fixed;
+	height: 1500px;
+	background-color: lightslategrey;
 }	
 				
 #main {
@@ -71,6 +74,11 @@ header, main, footer, nav, article, aside, div {
 h2 {
 	text-align: center;
 }
+h3 {
+	text-align: center;
+}
+
+
 
 .knapp {
 	border-style: solid;
@@ -110,3 +118,28 @@ main>article>article {
 	margin: 10px;
 }
 
+.tg  {																													/* Styling av timeplan, brukte en webgenerator til å få tabellen slik jeg ville */
+	border-collapse:collapse;border-spacing:0;
+	margin: 20px auto;
+}
+.tg td {
+	font-family:Arial, sans-serif;font-size:8px;padding:5px 1px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;
+}
+.tg th{font-family:Arial, sans-serif;font-size:8px;font-weight:normal;padding:5px 1px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;
+}
+.tg .tg-et8b {
+	background-color:#00009b;color:#ffffff;vertical-align:top
+}
+.tg .tg-yw4l {
+	vertical-align:top
+}
+.tg .tg-u722 {
+	background-color:#34ff34;vertical-align:top
+}
+.tg .tg-8env {
+	background-color:#fe0000;color:#ffffff;vertical-align:top
+}
+
+tr:nth-child(odd) {																							/* farge på anhver linje i tabellene */
+    background-color: lightslategrey;
+}
