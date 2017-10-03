@@ -143,3 +143,16 @@ main>article>article {
 tr:nth-child(odd) {																							/* farge på anhver linje i tabellene */
     background-color: lightslategrey;
 }
+
+svg {
+	display: block;
+	margin: 20px auto;
+}
+
+#flagg {
+	width: 500px;
+	float: none;
+	display: block;
+	margin: 20px auto;
+	
+}
