@@ -3,8 +3,11 @@
 	<head>
 		<meata charset="utf-8" />
 		<title>Jaran's Skole side</title>
-		<link href="stiler/stil.css" rel="stylesheet" />
+		<link media="all" href="stiler/stil.css" rel="stylesheet" />
+		<link media="print" href="stiler/stilprint.css" rel="stylesheet" />
 		<link rel="stylesheet" href="stiler/font/css/font-awesome.min.css" />
+		<script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
 	</head>
 	<body>
 		<div id="master-grid">
@@ -34,7 +37,7 @@
 			<main id="main">
 				<article>
 					<h2>MathML</h2>
-					<p>MathML er en xtml kode, som lar deg skrive inn avanserte mattematikk oppgaver på websiden, uten å måtte legge inn bilde. Dette er flott, fordi at formelene kan leses opp via leseprogrammen for synshemmede.</p>
+					<p>MathML er en xtml kode, som lar deg skrive inn avanserte mattematikk oppgaver på websiden, uten å måtte legge inn bilde. Da slipper man å skriveformelen og legge opp et bilde på websiden hver gang den skal endres. Dette er også flott, fordi at formelene kan leses opp via leseprogrammen for synshemmede. MathML kan ikke regne ut noe selv, det er bare korrekt oppstilling av mattestykker. Google Chrome har ikke full støtte for MathML pr dagsdato, så må ha hjelp av JavaScript for å vise det korrekt. </p>
 					<p>Her kommer et eksempel:</p>
 					<math display="block">
 					 <mrow>
@@ -180,7 +183,7 @@
 					</table>					
 				</article>
 				<article>
-					<h2>Linke Arkiv</h2>
+					<h3>Linke Arkiv</h3>
 					<ul>
 						<li><a class="knapp" href="http://www.hiof.no">HiØ - Høyskolen i Østfold</a></li>
 						<li><a class="knapp" href="https://no.timeedit.net/web/hiof/db1/2/ri101827X55Z07Q5Z96g6080y0056YQY503gQY5Q55.html">Timeplan</a></li>
@@ -193,7 +196,7 @@
 					</ul>
 				</article>
 				<article>
-					<h2>Viktig informasjon</h2>
+					<h3>Viktig informasjon</h3>
 					<p>Tidsfrister:</p>
 					<ul>
 						<li><a href="../oblig1/oppgave1.html">Oblig 1: 20/09-17</a></li>
@@ -213,3 +216,4 @@
 		</div>
 	</body>
 </html>
+	
