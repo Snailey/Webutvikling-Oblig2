@@ -4,6 +4,8 @@
 		<meata charset="utf-8" />
 		<title>Jaran's Skole side</title>
 		<link href="stiler/stil.css" rel="stylesheet" />
+		<script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
 	</head>
 	<body>
 		<div id="master-grid">
@@ -28,7 +30,91 @@
 					<h2>MathML</h2>
 					<p>MathML er en xtml kode, som lar deg skrive inn avanserte mattematikk oppgaver på websiden, uten å måtte legge inn bilde. Dette er flott, fordi at formelene kan leses opp via leseprogrammen for synshemmede.</p>
 					<p>Her kommer et eksempel:</p>
-					<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>
+					<math display="block">
+					 <mrow>
+						 <msup>
+							 <mfenced>
+								 <mrow>
+									 <mi>a</mi>
+									 <mo>+</mo>
+									 <mi>b</mi>
+								 </mrow>
+							 </mfenced>
+							 <mn>2</mn>
+						 </msup>
+					 </mrow> 
+					</math>
+					<p>Enda et eksempel:</p>
+					<math display='block'>
+						<mrow>
+						<semantics>
+							<mrow>
+								<msubsup>
+									<mo>&int;</mo>
+									<mn>1</mn>
+									<mi>t</mi>
+								</msubsup>
+								<mfrac>
+									<mrow>
+										<mo>&dd;</mo>
+										<mi>x</mi>
+									</mrow>
+									<mi>x</mi>
+								</mfrac>
+							</mrow>
+							<annotation-xml encoding="MathML-Content">
+								<apply>
+									<int/>
+									<bvar><ci>x</ci></bvar>
+									<lowlimit><cn>1</cn></lowlimit>
+									<uplimit><ci>t</ci></uplimit>
+									<apply>
+										<divide/>
+										<cn>1</cn>
+										<ci>x</ci>
+									</apply>
+								</apply>
+							</annotation-xml>
+						</semantics>
+						</mrow>
+					</math>
+				<p>Et tredje eksempel:</p>
+					<math display='block'>
+						<mrow>
+							<mi>x</mi>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<mrow>
+										<mo>-</mo>
+										<mi>b</mi>
+									</mrow>
+									<mo>&PlusMinus;</mo>
+									<msqrt>
+										<mrow>
+											<msup>
+												<mi>b</mi>
+												<mn>2</mn>
+											</msup>
+											<mo>-</mo>
+											<mrow>
+												<mn>4</mn>
+												<mo>&InvisibleTimes;</mo>
+												<mi>a</mi>
+												<mo>&InvisibleTimes;</mo>
+												<mi>c</mi>
+											</mrow>
+										</mrow>
+									</msqrt>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+								</mrow>
+							</mfrac>
+						</mrow>
+					</math>
 				</article>
 			</main>
 			<aside id="aside">
